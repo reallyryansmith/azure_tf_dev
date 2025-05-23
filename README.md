@@ -1,4 +1,4 @@
-# Azure Networking Terraform Module
+# Azure Networking Training Terraform Module
 
 This module provisions a basic Azure networking layout:
 - A resource group
