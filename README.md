@@ -42,7 +42,7 @@ terraform apply -var-file="prod.tfvars"
 ##  File Structure
 
 ```
-azure-networking-lab/
+azure-tf-dev/
 ├── environments/
 │   ├── dev/
 │   │   ├── backend.tf
