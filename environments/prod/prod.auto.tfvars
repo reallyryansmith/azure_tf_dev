@@ -14,3 +14,5 @@ vm_definitions = {
   web-vm = "web"
   app-vm = "app"
 }
+
+ssh_public_key_path = "~/.ssh/id_ed25519.pub"
