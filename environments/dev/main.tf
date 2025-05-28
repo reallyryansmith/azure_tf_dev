@@ -9,3 +9,13 @@ module "networking" {
   subnets             = var.subnets
   vm_definitions      = var.vm_definitions
 }
+
+module "lb_web_cluster" {
+  source              = "../../modules/lb_web_cluster"
+  location            = module.networking.location
+  resource_group_name = module.networking.resource_group_name
+  subnet_id           = module.networking.web_subnet_id
+  vm_names            = ["vm1", "vm2", "vm3"]
+  ssh_public_key_path = var.ssh_public_key_path
+}
+
