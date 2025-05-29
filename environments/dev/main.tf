@@ -8,6 +8,8 @@ module "networking" {
   blackhole_prefix    = var.blackhole_prefix
   subnets             = var.subnets
   vm_definitions      = var.vm_definitions
+  
+  depends_on = [module.networking]
 }
 
 module "lb_web_cluster" {
