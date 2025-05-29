@@ -9,7 +9,6 @@ module "networking" {
   subnets             = var.subnets
   vm_definitions      = var.vm_definitions
   
-  depends_on = [module.networking]
 }
 
 module "lb_web_cluster" {
@@ -19,5 +18,6 @@ module "lb_web_cluster" {
   subnet_id           = module.networking.web_subnet_id
   vm_names            = ["vm1", "vm2", "vm3"]
   ssh_public_key_path = var.ssh_public_key_path
+  depends_on = [module.networking]
 }
 
