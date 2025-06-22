@@ -9,7 +9,7 @@ This repository defines modular and reusable Terraform configurations for deploy
 - Resource Group creation
 - Virtual Network (VNet) with configurable address space
 - Subnet definitions for web and app tiers
-- Route Table with a blackhole route for CIDR filtering
+- Route Table with a blackhole route for CIDR filtering (not functional to the build, just testing something different with routes)
 
 ### Load Balancer Web Cluster Module
 - Public IP address creation
